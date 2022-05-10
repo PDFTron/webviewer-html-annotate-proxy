@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3000;
 const NODE_PORT = process.env.REACT_APP_NODE_PORT || 3100;
 
 const OPTIONS = {
-  SERVER_ROOT: `http://localhost`,
+  SERVER_ROOT: `http://${process.env.SERVER_HOST}`,
   PORT: NODE_PORT,
   CORS_OPTIONS: {
     origin: [
