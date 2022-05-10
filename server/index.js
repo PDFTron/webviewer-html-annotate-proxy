@@ -11,7 +11,7 @@ const OPTIONS = {
   PORT: NODE_PORT,
   CORS_OPTIONS: {
     origin: [
-      `http://localhost:${PORT}`,
+      `http://${process.env.SERVER_HOST}:${PORT}`,
       `http://first.mydomain.com:3000`,
       `http://second.mydomain.com:3001`,
     ], credentials: true
